@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <!--<!--<div class="navbar layout-dark">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <!--<div class="right">
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page content">
+                <div class="page layout-dark">
+                <div class="login-screen-title">PUBLICAR</div>
+              <center>
+                <img id="foto" src="" width="300px" height="300px" style="margin: 20px" />
+                <br/>
+                <a id="btn" class="button button-round" style="margin: 10px;">Seleccionar Imagen</a>
+                <div class="list-block">
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon f7-icons">chat</i></div>
+                    <div class="item-inner">
+                      <div class="item-title label">Descripción</div>
+                      <ul>
+                        <div class="item-input">
+                          <textarea placeholder="Agregue su Descripción"></textarea>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <a id="load" class="button button-big button-round active" style="margin: 10px">Publicar</a>
+                <!--<a id="btn" class="button button-round" style="margin: 10px;">Publicar</a>-->       
+              </center>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/Post.js"></script>
+  </body>
+</html>
