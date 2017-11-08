@@ -1,8 +1,18 @@
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+	swipePanel: 'right'
+});
+
 
 // Export selectors engine
 var $$ = Dom7;
+
+$$(document).on('deviceready',initapp);
+
+function initapp(){
+	console.log('dispositivo listo');
+}
+
 
 $$('.open-right-panel').on('click', function (e) {
         // 'right' position to open Right panel
@@ -40,9 +50,6 @@ var dynamicPageIndex=0;function createContentPage(){
 
 
 
-$$(document).on('deviceready',initapp);
 
-function initapp(){
 
-}
 

@@ -16,12 +16,6 @@ $$("#backr").on("click",function(e){
   document.location="index.html";
 });
 
-function initapp(){
-
-  $$("#iniciar").on("click", click_btn);
-
-}
-
 function click_btn(){
   var name = $$('#nombre').val();
   var nick = $$('#apellido').val();
@@ -48,17 +42,11 @@ function click_btn(){
       success: function(data){
               myApp.hidePreloader();
               if(data.resp){
-                      myApp.alert("Hola "+data.data.nombre ,"Exito!", function(){
-                        
-                        $$('#nom').html(data.data.nombre);
-                        $$('#nick').html(data.data.nick);
-                        $$('#cmpny').html(data.data.company);
-                        $$('#mail').html(data.data.email);
-
+                      myApp.alert("Hola "+data.data.nombre ,"Exito!"{
                         myApp.closeModal('.login-screen',true);
                       });
               }else{
-                      myApp.alert(data.info,"Advertencia!");
+                      myApp.alert(data.info,"Error!, intente nuevamente");
               }
       },
       error: function(){
